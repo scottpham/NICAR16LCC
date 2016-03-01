@@ -1,4 +1,4 @@
-# CensusReporter.org
+# [CensusReporter.org](http://censusreporter.org)
 
 *By Brent Jones, for NICAR 2016*
 
@@ -37,3 +37,15 @@ These three are an introduction to the rest. Getting Started is a basic overview
 * [Veterans and Military](http://censusreporter.org/topics/veterans/)
 
 The rest of these describe the topics in more detail as well as list many tables that pertain to the topic. They're a great way to get started if you're just exploring data.
+
+### Topic Search
+
+Also available from the homepage is topic search. You can start typing words relating to tables that you're interested in, and a dropdown list will show you what's available.
+
+### What you get
+
+With either of these methods, you'll get a page describing the table. Helpfully, you'll get the universe of the table, to see who is included in the data. You'll also see the columns available. Off to the right are links to the topic pages that are relevant.
+
+Most importantly, at the top is a box to pick the geographies you want to look at. You can either type a place name or a "summary level" — meaning a type of geography, like state, county, place, etc.
+
+If you choose a summary level you'll also be asked to choose another, larger, summary level to filter the first choice by. An example: If you choose "places", you can then filter to choose places *in* Missouri, or places *in* St. Louis County.
