@@ -49,3 +49,29 @@ With either of these methods, you'll get a page describing the table. Helpfully,
 Most importantly, at the top is a box to pick the geographies you want to look at. You can either type a place name or a "summary level" — meaning a type of geography, like state, county, place, etc.
 
 If you choose a summary level you'll also be asked to choose another, larger, summary level to filter the first choice by. An example: If you choose "places", you can then filter to choose places *in* Missouri, or places *in* St. Louis County.
+
+#### The table view
+
+Once you've chosen your places and clicked through, you'll get a table. Here's its anatomy:
+
+* At the top, you have the dataset used (usually ACS, with 1-, 3- or 5-year noted)
+* Below that, the table universe.
+* Across the top of the table, in columns, you have the geographies you selected.
+* Down the sides, you have the "columns" of categories in the table.
+* The data, with margins of error, are in the appropriate spots.
+
+A few tools are available to you on this page. On the left you can change what geographies you're looking at. At the top right, you can download the data into various formats, including GeoJSON or shapefiles.
+
+Finally, in the green buttons near the top, you can view the data in two other ways: A map or a distribution.
+
+#### Map view
+
+TKTK
+
+#### Distribution view
+
+TKTK
+
+### Place search
+
+TKTK
