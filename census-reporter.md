@@ -82,4 +82,21 @@ For each column, there's a line with each geography represented as a circle. The
 
 ## Place search
 
-TKTK
+One simple way of using Census Reporter is by finding out information about a specific place. You can do this in the top search bar on the homepage, or the search bar in the top toolbar on most pages.
+
+You can also click on the "search by address" button and let the site have access to your location (or just type in an address). This method lets you choose any of the geographies your address fits into: from block group to state, division or region.
+
+Once you've chosen a place, you'll see a map at the top of the page showing the boundaries of the area. There's an info box with basic information about the place. Also important, the info box tells which data set is used.
+
+Below that, there's a box to jump to a specific table.
+
+After that is a series of charts:
+
+* Demographics
+* Economics
+* Families
+* Housing
+* Social
+
+The charts note where the margins of error are large (and therefore where you should be careful using the data). You can roll over most areas on the charts to show more information.
+
