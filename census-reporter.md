@@ -12,7 +12,7 @@ Or be a starting place for a deeper story.
 * By topic search
 * Guided topics
 
-### Guided Topics
+## Guided Topics
 Found on the homepage, these topics explain Census and ACS tables and provide direct links to CensusReporter summaries for many tables.
 
 * [Getting Started](http://censusreporter.org/topics/getting-started/)
@@ -38,7 +38,7 @@ These three are an introduction to the rest. Getting Started is a basic overview
 
 The rest of these describe the topics in more detail as well as list many tables that pertain to the topic. They're a great way to get started if you're just exploring data.
 
-### Topic Search
+## Topic Search
 
 Also available from the homepage is topic search. You can start typing words relating to tables that you're interested in, and a dropdown list will show you what's available.
 
@@ -74,8 +74,12 @@ You can also change how your geography is divided, or change which geography you
 
 #### Distribution view
 
-TKTK
+The distribution view is the final way to view the data. I found out that internally, some folks at Census Reporter call these "COAL" charts, for "circles-on-a-line".
 
-### Place search
+You'll find the familiar bar at the left with options for changing the geography, and the data set used as well as the universe at the top.
+
+For each column, there's a line with each geography represented as a circle. The Minimum, Median and Maximum are labeled. Rolling over the circles generates the tooltip, and you can click to lock the tooltip open, in order to compare more than one item.
+
+## Place search
 
 TKTK
