@@ -66,7 +66,11 @@ Finally, in the green buttons near the top, you can view the data in two other w
 
 #### Map view
 
-TKTK
+If you check out the map view, you'll see a choropleth map of the geography selected. Rolling over the geographies triggers a tooltip with the information selected, as well as the margin of error. An info box gives you the same basic data as the table view.
+
+You want to be careful here, making sure that the column selected under "Show Column" in the info box is the column you think it is.
+
+You can also change how your geography is divided, or change which geography you're looking at by clicking the Add More Places button.
 
 #### Distribution view
 
