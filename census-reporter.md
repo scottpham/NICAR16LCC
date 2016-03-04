@@ -100,3 +100,8 @@ After that is a series of charts:
 
 The charts note where the margins of error are large (and therefore where you should be careful using the data). You can roll over most areas on the charts to show more information.
 
+The charts each have two links under them: Show data, and Embed.
+
+### Show data
+
+If you click "Show data" under any of the charts, a table pops open where you can see the numbers used in generating the charts, along with all the margins of error, and a dagger where the MOE is large. Another benefit of this chart is, if you have a small geography selected, it'll compare the selected geography with larger geographies, to give some context.
