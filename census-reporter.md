@@ -121,3 +121,37 @@ The charts each have two links under them: Show data, and Embed.
 ![Show Data](assets/census_reporter_show_data.gif)
 
 If you click "Show data" under any of the charts, a table pops open where you can see the numbers used in generating the charts, along with all the margins of error, and a dagger where the MOE is large. Another benefit of this chart is, if you have a small geography selected, it'll compare the selected geography with larger geographies, to give some context.
+
+## Ways to use this info
+
+### Provide context
+
+No admin access, coding or special CMS skills required! Works in all media!
+
+Use Census Reporter data to provide context in stories:
+
+* If there's a new condo development going up in Denver, I can take less than five minutes to tell you that Denver's housing has a [median age of 1966](http://censusreporter.org/data/table/?table=B25035&geo_ids=16000US0820000&primary_geo_id=16000US0820000) and that only [3.1% of its housing has been built since 2010](http://censusreporter.org/data/table/?table=B25034&geo_ids=16000US0820000&primary_geo_id=16000US0820000).
+* If after-school programs are being cut, I can tell you that [22% of Denver's kids live below the poverty line](http://censusreporter.org/profiles/16000US0820000-denver-co/#poverty).
+* If there's a major new road construction project announced, I can tell you that [more than 60% of Denver's workers spend less than 30 minutes getting to work](http://censusreporter.org/data/table/?table=B08303&geo_ids=16000US0820000&primary_geo_id=16000US0820000), and [around 80% of them drive alone or in a carpool](http://censusreporter.org/data/table/?table=B08105A&geo_ids=16000US0820000&primary_geo_id=16000US0820000).
+
+
+### Embed the data as a chart
+
+![Embed Chart](assets/census_reporter_embed_chart.gif)
+
+Census Reporter provides embed codes for charts on the place pages. This does require access to the HTML code of your posts, and a cooperative CMS — not a "helpful" one that tries to strip out HTML tags it doesn't like. If you've ever embedded a Tweet or a YouTube video, you might be able to embed a Census Reporter chart.
+
+Just find the chart you're interested in, and click the "embed" link below it. You'll get a popup modal that allows you to select whether the graphic should be full-width in your story, or floated to the left or right. Then all you have to do is copy the HTML code and paste it into your CMS.
+
+The embedded charts are responsive and interactive.
+
+### Download the data
+![Download Data](assets/census_reporter_download_data.png)
+
+Finally, you can download the data from any chart or table to do further analysis or make custom visualizations. When you're looking at a table, just click the "Download data" button in the top right corner.
+
+You can get the data as CSV or Excel for analysis or visualization, or GeoJSON, KML or Shapefile for mapping.
+
+## More info
+
+You can also find Census Reporter's [blog on Tumblr](http://censusreporter.tumblr.com/), [Tweets on Twitter](https://twitter.com/CensusReporter) and code on [GitHub](https://github.com/censusreporter/). Census Reporter also provides [an API](https://github.com/censusreporter/census-api/blob/master/API.md) to make grabbing Census data easier.
