@@ -6,6 +6,8 @@ First stop for exploring U.S. Census and American Community Survey data.
 Can give you basic facts about a place very quickly.
 Or be a starting place for a deeper story.
 
+![Census Reporter Homepage](assets/census_reporter_homepage.png)
+
 ## Ways to explore:
 
 * By place search
@@ -44,6 +46,8 @@ Also available from the homepage is topic search. You can start typing words rel
 
 ### What you get
 
+![Census Reporter Explore Topic Table](assets/census_reporter_explore_topic_table.png)
+
 With either of these methods, you'll get a page describing the table. Helpfully, you'll get the universe of the table, to see who is included in the data. You'll also see the columns available. Off to the right are links to the topic pages that are relevant.
 
 Most importantly, at the top is a box to pick the geographies you want to look at. You can either type a place name or a "summary level" — meaning a type of geography, like state, county, place, etc.
@@ -51,6 +55,8 @@ Most importantly, at the top is a box to pick the geographies you want to look a
 If you choose a summary level you'll also be asked to choose another, larger, summary level to filter the first choice by. An example: If you choose "places", you can then filter to choose places *in* Missouri, or places *in* St. Louis County.
 
 #### The table view
+
+![Census Reporter Table](assets/census_reporter_table.png)
 
 Once you've chosen your places and clicked through, you'll get a table. Here's its anatomy:
 
@@ -66,6 +72,8 @@ Finally, in the green buttons near the top, you can view the data in two other w
 
 #### Map view
 
+![Census Reporter Choropleth](assets/census_reporter_choropleth.png)
+
 If you check out the map view, you'll see a choropleth map of the geography selected. Rolling over the geographies triggers a tooltip with the information selected, as well as the margin of error. An info box gives you the same basic data as the table view.
 
 You want to be careful here, making sure that the column selected under "Show Column" in the info box is the column you think it is.
@@ -73,6 +81,8 @@ You want to be careful here, making sure that the column selected under "Show Co
 You can also change how your geography is divided, or change which geography you're looking at by clicking the Add More Places button.
 
 #### Distribution view
+
+![Census Reporter Distribution](assets/census_reporter_distribution.png)
 
 The distribution view is the final way to view the data. I found out that internally, some folks at Census Reporter call these "COAL" charts, for "circles-on-a-line".
 
@@ -82,11 +92,15 @@ For each column, there's a line with each geography represented as a circle. The
 
 ## Place search
 
+![Search by Address](assets/census_reporter_find_address.gif)
+
 One simple way of using Census Reporter is by finding out information about a specific place. You can do this in the top search bar on the homepage, or the search bar in the top toolbar on most pages.
 
 You can also click on the "search by address" button and let the site have access to your location (or just type in an address). This method lets you choose any of the geographies your address fits into: from block group to state, division or region.
 
 Once you've chosen a place, you'll see a map at the top of the page showing the boundaries of the area. There's an info box with basic information about the place. Also important, the info box tells which data set is used.
+
+![Place page](assets/census_reporter_denver.png)
 
 Below that, there's a box to jump to a specific table.
 
@@ -103,5 +117,7 @@ The charts note where the margins of error are large (and therefore where you sh
 The charts each have two links under them: Show data, and Embed.
 
 ### Show data
+
+![Show Data](assets/census_reporter_show_data.gif)
 
 If you click "Show data" under any of the charts, a table pops open where you can see the numbers used in generating the charts, along with all the margins of error, and a dagger where the MOE is large. Another benefit of this chart is, if you have a small geography selected, it'll compare the selected geography with larger geographies, to give some context.
