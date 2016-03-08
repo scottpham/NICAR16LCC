@@ -1,18 +1,36 @@
 # NICAR16LCC
 Tipsheet for the Lonely Coder Presentation at NICAR 2016 in Denver
 
-##Original Session Description: So You Want to Be a Lonely Coder?
+## Original Session Description: So You Want to Be a Lonely Coder?
+
 How do you transition from a journalist who does data stuff sometimes to a full-fledged coder in your newsroom and what happens when you do? This session will help you take your data skills to the next level by giving you easy-to-replicate projects and newsroom tools that involve minimal coding and can be done in most locations and beats. Panelists will take you through some “easy wins” for your newsroom and discuss their experiences navigating newsrooms as the only coder in the room, as well as how to get buy-in from your boss and to convince higher-ups of the extra value in these types of projects.
 
-##Goals:
+## Goals:
 The goal is to provide some concrete examples and starting points on how to get started in the world of data journalism from a dead stop. The audience should leave with some story ideas, easy-to-pick up tools and some notion of a plan that will take him from software-user to coding-journalist.
 
 By Scott Pham, Brent Jones, Allie Kanik, and Lindsey Cook
 
+# Intro
+*By Scott Pham*
 
-# [CensusReporter.org](http://censusreporter.org)
+When I started out in data journalism, I felt a little lost. None of my immediate peers had any experience with data or code. It was hard to explain to others what I was trying to learn and do, and I didn't always have the tools or support I needed to do it.
 
-*By Brent Jones, for NICAR 2016*
+I think that people who are learning data journalism on their own need to think hard about their strategy and their goals. Their newsroom may or may not be hospitable to data journalism and they need to find a way forward that works for their specific context.
+
+A lonely coder needs to actively reach out for help and community because they aren't going to get it from their peers. We can't solve all (or most!) of these problems with a tipsheet, but what we can do is provide some projects to get started from zero.
+
+If you are a lonely coder (or merely identify as one!) join the [Lonely Coders Club Slack group](http://lcc-slack.herokuapp.com/): or contact me at spham@cironline.org to get an invite. The group has more than a hundred coding journalists in newsrooms around the country. It's a good place to ask questions or show off some of your work.
+
+*A note on code*: Not all data journalists code, but we've focused on coding because this tends to the be a big roadblock to solo data journalists. If you're on your own, your peers won't understand your code and might not get why its necessary or what it can do. These projects are designed to keep you productive and help you build on each success.
+
+### Table of Contents:
+- [CensusReporter.org](#census)
+- [Interactive Tables](#tables)
+
+
+# <a name="census"></a>[CensusReporter.org](http://censusreporter.org)
+
+*By Brent Jones*
 
 First stop for exploring U.S. Census and American Community Survey data.
 Can give you basic facts about a place very quickly.
@@ -167,3 +185,35 @@ You can get the data as CSV or Excel for analysis or visualization, or GeoJSON, 
 ## More info
 
 You can also find Census Reporter's [blog on Tumblr](http://censusreporter.tumblr.com/), [Tweets on Twitter](https://twitter.com/CensusReporter) and code on [GitHub](https://github.com/censusreporter/). Census Reporter also provides [an API](https://github.com/censusreporter/census-api/blob/master/API.md) to make grabbing Census data easier.
+
+----------
+# <a name="table"></a>Interactive Tables Can Be Rad
+*By Scott Pham*
+An interactive table is one of the most basic kinds of interactives you can make. But they can be hella cool and are a good project to build skills with.
+![](assets/tables_nytimes.png)
+This recent NYTimes table showing polling data walks the line between a chart and a table, but that’s often when tables can really shine. This data would be awkward in bar chart form and would require a large amount of small-multiples. I think it works best as a humble table.
+
+## Most data you encounter will be tabular
+![](assets/tables_tabular.png)
+So a table is a natural place to start. Depending on your skill level, here's what you can do to improve your basic HTML table.
+
+## Pretty it up
+Easiest way to get started is [Bootstrap CSS](http://getbootstrap.com/css/). If you haven't used it before, Bootstrap is very useful for everything from basic layouts to interactive components like buttons and nav bars.
+![](assets/tables_bootstrap_style.png)
+The css code for a basic bootstrap table is very simple:
+![](assets/tables_bootstrap_style.png)
+
+## Make its sortable
+Sorting is a fundamental programming concept, and it's not crazy to implement sorting yourself with jQuery or pure JavaScript. This [tutorial](http://code.tutsplus.com/tutorials/using-jquery-to-manipulate-and-filter-data--net-5351) on how to implement sorting and filtering is a bit old but the code is still useable.
+
+[TSorter](tsorter http://www.terrill.ca/sorting/) is a really minimal library with pretty readable code. I used it on a recent project to do simple sorting of a small table.
+![](assets/table_tsorter.png)
+
+## Make it sortable *and* paginated
+The [DataTables] (https://datatables.net/examples/basic_init/table_sorting.html) library is pretty hard to beat--it adds sorting, pagination and filtering to any table. A table that's too big to fit on one page becomes a dynamic, user-searchable database.
+
+DataTables works best when you already have your table in HTML. If you don't, you can import that table from Google Docs with very little code. [Chris Keller’s Tabletop to Datatables](https://github.com/chrislkeller/_tabletop_to_datatables) repo is where I first started. [Lisa William’s Illustrated Guide](http://dataforradicals.com/the-absurdly-illustrated-guide-to-sortable-searchable-online-data-tables/) gives you a painstakingly step-by-step guide, guaranteeing that you'll be able to get this online. After going through those repos, I made my own [Tabletop to Datatables Fork](https://github.com/scottpham/tabletop-to-datatables),
+
+## Part of your toolset
+As you learn, you can find ways to include tables in your interactives. In this [recent interactive](LINK TK), I put a table alongside a map.
+![](assets/tables_cir.png)
