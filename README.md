@@ -243,7 +243,7 @@ This tutorial is a beginner version of the docs provided by [Quartz](https://git
 1. In your finder, go to Chartbuilder/src and create a new folder called fonts.
 2. Find your font on Google fonts and download it. I’m using [Roboto](https://www.google.com/fonts#UsePlace:use/Collection:Roboto) and downloading the light, medium and bold. 
 3. Unzip and move the folder inside your fonts folder
-4. Open Chartbuilder/src/styl/fonts.styl in a text editor ([I use Sublime Text](https://www.sublimetext.com/)) and delete what’s in there currently. Replace with the following: 
+4. Open Chartbuilder/src/styl/fonts.styl in a text editor ([I use Sublime Text](https://www.sublimetext.com/)) and delete what’s in there currently. Replace with the following for your fonts: 
 
 ```
 @font-face {
@@ -289,9 +289,11 @@ Save.
 
 If you go back to your Chartbuilder in your browser, your new fonts will be there. 
 
+You may need to restart the version of Chartbuilder in your browser. You can do that at any time by typing npm run dev
+
 ##Colors
 
-Open Chartbuilder/src/styl/colors.styl in your text editor and find $chart-colors. You can swap out these colors for the colors on your website. Just don’t add more than the 11 that are already there. 
+Open Chartbuilder/src/styl/colors.styl in your text editor and find $chart-colors. You can swap out these colors for the colors on your website. Just don’t add more than the 11 that are already there. If you want to add more, see George's tutorial for more information on how.
 
 These are mine: 
 
@@ -412,7 +414,7 @@ git add *
 git commit -m "first commit"
 ```
 
-Follow these with the next two but use your own URL
+Then type the following, but use your own URL (also on the Github page on the website).
 
 ```
 git remote add origin https://github.com/lindzcook/Chartbuilder25.git
@@ -425,7 +427,7 @@ You should now see your code in your repo on the Github website. Here’s [mine.
 
 Now let’s create a new branch. On the website, click Branch:master and type gh-pages where it says Find or create a branch…
 
-!(assets/ghpagesbranch.png)
+![Branching on Github](/assets/ghpagesbranch.png)
 
 This will create what will become your live website.
 
