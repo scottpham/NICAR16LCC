@@ -8,7 +8,7 @@ How do you transition from a journalist who does data stuff sometimes to a full-
 ## Goals:
 The goal is to provide some concrete examples and starting points on how to get started in the world of data journalism from a dead stop. The audience should leave with some story ideas, easy-to-pick up tools and some notion of a plan that will take him from software-user to coding-journalist.
 
-By (Scott Pham)[https://twitter.com/scottpham], (Brent Jones)[https://twitter.com/brentajones], (Allie Kanik)[https://twitter.com/act_rational], and (Lindsey Cook)[https://twitter.com/Lindzcook]
+By [Scott Pham](https://twitter.com/scottpham), [Brent Jones](https://twitter.com/brentajones), [Allie Kanik](https://twitter.com/act_rational), and [Lindsey Cook](https://twitter.com/Lindzcook)
 
 # Intro
 *By Scott Pham*
