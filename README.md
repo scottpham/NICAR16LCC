@@ -202,7 +202,7 @@ So a table is a natural place to start. Depending on your skill level, here's wh
 Easiest way to get started is [Bootstrap CSS](http://getbootstrap.com/css/). If you haven't used it before, Bootstrap is very useful for everything from basic layouts to interactive components like buttons and nav bars.
 ![](assets/tables_bootstrap_style.png)
 The css code for a basic bootstrap table is very simple:
-![](assets/tables_bootstrap_style.png)
+![](assets/tables_bootstrap_code.png)
 
 ## Make its sortable
 Sorting is a fundamental programming concept, and it's not crazy to implement sorting yourself with jQuery or pure JavaScript. This [tutorial](http://code.tutsplus.com/tutorials/using-jquery-to-manipulate-and-filter-data--net-5351) on how to implement sorting and filtering is a bit old but the code is still useable.
@@ -227,7 +227,7 @@ Chartbuilder is a powerful open source charting tool from the team at Quartz. Th
 
 This tutorial is a beginner version of the docs provided by [Quartz](https://github.com/Quartz/Chartbuilder) and the [awesome tutorial](https://github.com/golfecholima/Chartbuilder/blob/master/docs/MakingChartbuilderYours.md) by [George LeVines](https://twitter.com/rhymeswthgeorge).
 
-##Getting Setup
+## Getting Setup
 
 1. Download and install [Node](https://nodejs.org/en/download/)
 2. Download Chartbuilder via [Quartz’s Github](https://github.com/Quartz/Chartbuilder/archive/master.zip)
@@ -238,12 +238,12 @@ This tutorial is a beginner version of the docs provided by [Quartz](https://git
 7. When that is finished (it could take several minutes) type npm run dev
 8. When you see “serving files from: build” visit http://localhost:3000/ in your browser. You should see a version of Chartbuilder
 
-##Typography
+## Typography
 
 1. In your finder, go to Chartbuilder/src and create a new folder called fonts.
-2. Find your font on Google fonts and download it. I’m using [Roboto](https://www.google.com/fonts#UsePlace:use/Collection:Roboto) and downloading the light, medium and bold. 
+2. Find your font on Google fonts and download it. I’m using [Roboto](https://www.google.com/fonts#UsePlace:use/Collection:Roboto) and downloading the light, medium and bold.
 3. Unzip and move the folder inside your fonts folder
-4. Open Chartbuilder/src/styl/fonts.styl in a text editor ([I use Sublime Text](https://www.sublimetext.com/)) and delete what’s in there currently. Replace with the following for your fonts: 
+4. Open Chartbuilder/src/styl/fonts.styl in a text editor ([I use Sublime Text](https://www.sublimetext.com/)) and delete what’s in there currently. Replace with the following for your fonts:
 
 ```
 @font-face {
@@ -268,7 +268,7 @@ src: url('/fonts/Roboto/Roboto-Light.ttf');
 }
 ```
 
-Open Chartbuilder/src/styl/type.styl and use your new fonts. I have this: 
+Open Chartbuilder/src/styl/type.styl and use your new fonts. I have this:
 
 ```
 
@@ -285,17 +285,17 @@ $monospaced-font-family = Monaco, Lucida Console, monspace
 
 ```
 
-Save. 
+Save.
 
-If you go back to your Chartbuilder in your browser, your new fonts will be there. 
+If you go back to your Chartbuilder in your browser, your new fonts will be there.
 
 You may need to restart the version of Chartbuilder in your browser. You can do that at any time by typing npm run dev
 
-##Colors
+## Colors
 
 Open Chartbuilder/src/styl/colors.styl in your text editor and find $chart-colors. You can swap out these colors for the colors on your website. Just don’t add more than the 11 that are already there. If you want to add more, see George's tutorial for more information on how.
 
-These are mine: 
+These are mine:
 
 ```
 $chart-colors = \
@@ -313,7 +313,7 @@ $chart-colors = \
 
 ```
 
-##Add Your Logo
+## Add Your Logo
 
 Add your logo to src/assets and name it logo.png
 
@@ -369,11 +369,11 @@ module.exports = SvgImage;
 
 ```
 Save.
-Check out your chart with the logo. 
+Check out your chart with the logo.
 
-Depending on how big you want your logo to look, you may need to tweak the code in the Chartbuilder/src/js/components/svg/ChartFooter.jsx file. 
+Depending on how big you want your logo to look, you may need to tweak the code in the Chartbuilder/src/js/components/svg/ChartFooter.jsx file.
 
-For my version, I ended up with the following on line 101. (This is 30 on George’s tutorial) 
+For my version, I ended up with the following on line 101. (This is 30 on George’s tutorial)
 
 ```
 translate={[this.props.translate.left +110, this.props.translate.bottom - this.props.extraHeight]}
@@ -389,17 +389,17 @@ configCreditImg.logoheight = 30;
 
 ```
 
-George had 25 and 25. 
+George had 25 and 25.
 
 For even more customization, see [George’s tutorial](https://github.com/golfecholima/Chartbuilder/blob/master/docs/MakingChartbuilderYours.md) and the [chartbuilder docs.](https://github.com/Quartz/Chartbuilder/tree/master/docs)
 
 When you are done making adjustments, you’re ready to deploy.
 
-##Deploying
+## Deploying
 
 Type npm run build into your terminal window. Note, you can create a new tab with apple + t.
 
-Copy all the contents of the build folder (which is inside chartbuilder) into a new folder outside of chartbuilder named MyChartbuilder. 
+Copy all the contents of the build folder (which is inside chartbuilder) into a new folder outside of chartbuilder named MyChartbuilder.
 
 Go to your github profile on the github website. Click repositories and click new to create a new repo for your version of Chartbuilder. Name it MyChartbuilder.
 
@@ -420,8 +420,8 @@ Then type the following, but use your own URL (also on the Github page on the we
 git remote add origin https://github.com/lindzcook/Chartbuilder25.git
 git push -u origin master
 ```
- 
-If you have never used Github on your computer, it will prompt for your username and password. Note, your password won’t show up as typed characters so it will look like nothing is happening when you are typing. That’s ok. 
+
+If you have never used Github on your computer, it will prompt for your username and password. Note, your password won’t show up as typed characters so it will look like nothing is happening when you are typing. That’s ok.
 
 You should now see your code in your repo on the Github website. Here’s [mine.](https://github.com/lindzcook/Chartbuilder25)
 
@@ -436,5 +436,3 @@ It may take a few mins, but your site will be live at http://username.github.io/
 See mine here: [http://lindseycook.io/Chartbuilder25/](http://lindseycook.io/Chartbuilder25/)
 
 Happy charting!
-
-
