@@ -8,7 +8,7 @@ How do you transition from a journalist who does data stuff sometimes to a full-
 ## Goals:
 The goal is to provide some concrete examples and starting points on how to get started in the world of data journalism from a dead stop. The audience should leave with some story ideas, easy-to-pick up tools and some notion of a plan that will take him from software-user to coding-journalist.
 
-By Scott Pham, Brent Jones, Allie Kanik, and Lindsey Cook
+By [Scott Pham](https://twitter.com/scottpham), [Brent Jones](https://twitter.com/brentajones), [Allie Kanik](https://twitter.com/act_rational), and [Lindsey Cook](https://twitter.com/Lindzcook)
 
 # Intro
 *By Scott Pham*
@@ -26,6 +26,7 @@ If you are a lonely coder (or merely identify as one!) join the [Lonely Coders C
 ### Table of Contents:
 - [CensusReporter.org](#census)
 - [Interactive Tables](#tables)
+- [Chartbuilder](#chartbuilder)
 
 
 # <a name="census"></a>[CensusReporter.org](http://censusreporter.org)
@@ -217,3 +218,223 @@ DataTables works best when you already have your table in HTML. If you don't, yo
 ## Part of your toolset
 As you learn, you can find ways to include tables in your interactives. In this [recent interactive](LINK TK), I put a table alongside a map.
 ![](assets/tables_cir.png)
+
+# <a name="chartbuilder"></a>Chartbuilder
+
+*By Lindsey Cook*
+
+Chartbuilder is a powerful open source charting tool from the team at Quartz. The tool can be customized easily with your newsroom's fonts, colors and logo and then hosted for free on Github. See what it looks like on Quartz's repo [here](https://quartz.github.io/Chartbuilder/).
+
+This tutorial is a beginner version of the docs provided by [Quartz](https://github.com/Quartz/Chartbuilder) and the [awesome tutorial](https://github.com/golfecholima/Chartbuilder/blob/master/docs/MakingChartbuilderYours.md) by [George LeVines](https://twitter.com/rhymeswthgeorge).
+
+##Getting Setup
+
+1. Download and install [Node](https://nodejs.org/en/download/)
+2. Download Chartbuilder via [Quartz’s Github](https://github.com/Quartz/Chartbuilder/archive/master.zip)
+3. Locate the folder and unzip it
+4. (Mac) Open the terminal -- this application comes with your computer and can be found in your Applications folder
+5. Type cd ~/Downloads/Chartbuilder-master/ to navigate to inside the folder
+6. Install the dependencies automatically by typing npm install (if a prompt comes up to install developer tools, allow it)
+7. When that is finished (it could take several minutes) type npm run dev
+8. When you see “serving files from: build” visit http://localhost:3000/ in your browser. You should see a version of Chartbuilder
+
+##Typography
+
+1. In your finder, go to Chartbuilder/src and create a new folder called fonts.
+2. Find your font on Google fonts and download it. I’m using [Roboto](https://www.google.com/fonts#UsePlace:use/Collection:Roboto) and downloading the light, medium and bold. 
+3. Unzip and move the folder inside your fonts folder
+4. Open Chartbuilder/src/styl/fonts.styl in a text editor ([I use Sublime Text](https://www.sublimetext.com/)) and delete what’s in there currently. Replace with the following for your fonts: 
+
+```
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+src: url('/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+font-family: 'Roboto-Bold';
+font-style: bold;
+font-weight: 700;
+src: url('/fonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+font-family: 'Roboto-Light';
+font-style: normal;
+font-weight: 300;
+src: url('/fonts/Roboto/Roboto-Light.ttf');
+}
+```
+
+Open Chartbuilder/src/styl/type.styl and use your new fonts. I have this: 
+
+```
+
+// Typography
+
+// Fonts
+$font-sans = 'Roboto',Helvetica,sans-serif
+$font-sans-light = 'Roboto-Light',Helvetica,sans-serif
+$font-sans-bold = 'Roboto-Bold', Helvetica, sans-serif
+$font-serif = Georgia,serif
+$primary-font-family = $font-sans
+$secondary-font-family = $font-serif
+$monospaced-font-family = Monaco, Lucida Console, monspace
+
+```
+
+Save. 
+
+If you go back to your Chartbuilder in your browser, your new fonts will be there. 
+
+You may need to restart the version of Chartbuilder in your browser. You can do that at any time by typing npm run dev
+
+##Colors
+
+Open Chartbuilder/src/styl/colors.styl in your text editor and find $chart-colors. You can swap out these colors for the colors on your website. Just don’t add more than the 11 that are already there. If you want to add more, see George's tutorial for more information on how.
+
+These are mine: 
+
+```
+$chart-colors = \
+	#c0ddf2 \
+	#2262bb \
+	#13325d \
+	#ffc14e \
+	#d1453d \
+	#e38d13 \
+	#ade8e0 \
+	#0abba4 \
+	#037b6b \
+	#666 \
+	#999
+
+```
+
+##Add Your Logo
+
+Add your logo to src/assets and name it logo.png
+
+Open Chartbuilder/src/js/components/svg/ChartFooter.jsx
+
+Make the changes outlined [here.](https://github.com/golfecholima/Chartbuilder/commit/4606247b7d3931f362c037f11eb718edfea6a601)
+
+Next, create the file SvgImage.jsx in Chartbuilder/src/js/components/svg/. Add the following contents to that file:
+
+```
+// Svg image elements used to annotate chart
+var React = require("react");
+var PropTypes = React.PropTypes;
+var ChartViewActions = require("../../actions/ChartViewActions");
+
+/**
+ * An Svg <image> element with width and height
+ * @instance
+ * @memberof RendererWrapper
+ */
+var SvgImage = React.createClass({
+
+    propTypes: {
+        className: PropTypes.string,
+        onUpdate: PropTypes.func,
+        translate: PropTypes.array.isRequired,
+        url: PropTypes.string.isRequired
+    },
+
+    render: function() {
+        var imgNodes;
+
+            imgNodes = (
+                <svg dangerouslySetInnerHTML={{__html: "<image xlink:href='" + this.props.url +
+                 "' width='" + this.props.width +
+                 "' height='" + this.props.height +
+                 "'/>" }} />
+            )
+
+        return (
+            <g
+                className={["svg-img", this.props.className].join(" ")}
+                transform={"translate(" + this.props.translate + ")"}
+            >
+                {imgNodes}
+            </g>
+        );
+    }
+
+});
+
+module.exports = SvgImage;
+
+```
+Save.
+Check out your chart with the logo. 
+
+Depending on how big you want your logo to look, you may need to tweak the code in the Chartbuilder/src/js/components/svg/ChartFooter.jsx file. 
+
+For my version, I ended up with the following on line 101. (This is 30 on George’s tutorial) 
+
+```
+translate={[this.props.translate.left +110, this.props.translate.bottom - this.props.extraHeight]}
+
+```
+
+And with the following on line 139:
+
+```
+
+configCreditImg.logowidth = 100;
+configCreditImg.logoheight = 30;
+
+```
+
+George had 25 and 25. 
+
+For even more customization, see [George’s tutorial](https://github.com/golfecholima/Chartbuilder/blob/master/docs/MakingChartbuilderYours.md) and the [chartbuilder docs.](https://github.com/Quartz/Chartbuilder/tree/master/docs)
+
+When you are done making adjustments, you’re ready to deploy.
+
+##Deploying
+
+Type npm run build into your terminal window. Note, you can create a new tab with apple + t.
+
+Copy all the contents of the build folder (which is inside chartbuilder) into a new folder outside of chartbuilder named MyChartbuilder. 
+
+Go to your github profile on the github website. Click repositories and click new to create a new repo for your version of Chartbuilder. Name it MyChartbuilder.
+
+Navigate to your folder using the command line. I saved mine on the desktop so in a new window type cd Desktop/MyChartbuilder
+
+Then run the following commands
+
+```
+echo "# MyChartbuilder" >> README.md
+git init
+git add *
+git commit -m "first commit"
+```
+
+Then type the following, but use your own URL (also on the Github page on the website).
+
+```
+git remote add origin https://github.com/lindzcook/Chartbuilder25.git
+git push -u origin master
+```
+ 
+If you have never used Github on your computer, it will prompt for your username and password. Note, your password won’t show up as typed characters so it will look like nothing is happening when you are typing. That’s ok. 
+
+You should now see your code in your repo on the Github website. Here’s [mine.](https://github.com/lindzcook/Chartbuilder25)
+
+Now let’s create a new branch. On the website, click Branch:master and type gh-pages where it says Find or create a branch…
+
+![Branching on Github](/assets/ghpagesbranch.png)
+
+This will create what will become your live website.
+
+It may take a few mins, but your site will be live at http://username.github.io/MyChartbuilder
+
+See mine here: [http://lindseycook.io/Chartbuilder25/](http://lindseycook.io/Chartbuilder25/)
+
+Happy charting!
+
+
