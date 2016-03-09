@@ -17,9 +17,9 @@ When I started out in data journalism, I felt a little lost. None of my immediat
 
 I think that people who are learning data journalism on their own need to think hard about their strategy and their goals. Their newsroom may or may not be hospitable to data journalism and they need to find a way forward that works for their specific context.
 
-A lonely coder needs to actively reach out for help and community because they aren't going to get it from their peers. We can't solve all (or most!) of these problems with a tipsheet, but what we can do is provide some projects to get started from zero.
+A lonely coder needs to actively reach out for help and community because they aren't going to get it from their peers. We can't solve all of these problems with a tipsheet, but what we can do is provide some projects to get started from zero. Small wins build credibility and help you learn programming while staying productive in the newsroom.
 
-If you are a lonely coder (or merely identify as one!) join the [Lonely Coders Club Slack group](http://lcc-slack.herokuapp.com/): or contact me at spham@cironline.org to get an invite. The group has more than a hundred coding journalists in newsrooms around the country. It's a good place to ask questions or show off some of your work.
+If you are a lonely coder (or merely identify as one!) join the [Lonely Coders Club Slack group](http://lcc-slack.herokuapp.com/) or contact me at spham@cironline.org to get an invite. The group has more than a hundred coding journalists in newsrooms around the country. It's a good place to ask questions or show off some of your work.
 
 *A note on code*: Not all data journalists code, but we've focused on coding because this tends to the be a big roadblock to solo data journalists. If you're on your own, your peers won't understand your code and might not get why its necessary or what it can do. These projects are designed to keep you productive and help you build on each success.
 
