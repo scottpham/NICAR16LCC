@@ -453,15 +453,15 @@ As a lonely coder, it's important to have an arsenal of tools that help you find
 
 ## <a name="github"></a>[Github](http://github.com)
 
-If you don't have a github account already, [sign up here](https://github.com/join?source=header-home).
+If you don't have a Github account already, [sign up here](https://github.com/join?source=header-home).
 
-Github is both a version control system and a platform for hosting and sharing code. The ideal situation is that you use github as *both* a version control system and a way to discover and share code. But it's important not to get hung up on the fact that you don't know how to use Github as a version control system. That part is a little tricky especially if you're not using it on a daily basis.
+Github is both a version control system and a platform for hosting and sharing code. The ideal situation is that you use Github as *both* a version control system and a way to discover and share code. But it's important not to get hung up on the fact that you don't know how to use Github as a version control system. That part is a little tricky especially if you're not using it on a daily basis.
 
 ### Using Github to find coding projects
 
-If you visit the [Github Explore page](https://github.com/explore), you'll see the vastness of the github network. Many organizations (including news orgs) are posting their code on github in an effort to enhance transparency and to facilitate sharing and co-development.
+If you visit the [Github Explore page](https://github.com/explore), you'll see the vastness of the Github network. Many organizations (including news orgs) are posting their code on Github in an effort to enhance transparency and to facilitate sharing and co-development.
 
-You can also perform a Google search for your favorite news organizations' github accounts to see what kind of data projects they've posted there. For example:
+You can also perform a Google search for your favorite news organizations' Github accounts to see what kind of data projects they've posted there. For example:
 ![](assets/github_search.png)
 
 
@@ -481,8 +481,15 @@ NOTE: This is actually where the version control system part comes in. If you're
 
 Here are some steps involved in pulling a repository to your local machine and Frankensteining it:
 
+
+- If you don't have a Github account already, [sign up here](https://github.com/join?source=header-home).
+- Github is available as a [GUI desktop application](https://desktop.github.com) or via the command line. I personally find the GUI version harder to understand than the command line version, so this example will use the command line. If you don't know how to use the command line I strongly suggest investing some time in it because it will make most projects you try to work on much easier and more logical.
+- If you're also unfamiliar with using git via command line, [here's a useful resource](https://help.github.com/articles/set-up-git/).
 - Visit a Github repository that you'd like to play around with. We'll us [Propublica's Landline repository](https://github.com/propublica/landline) for this demo.
 ![](assets/github_landline.png)
+- Grab the link that's available in the *https* field.
+- Create a local copy of the repository
+![](assets/git_clone.gif)
 
 
 
