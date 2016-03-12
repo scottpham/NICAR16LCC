@@ -27,6 +27,8 @@ If you are a lonely coder (or merely identify as one!) join the [Lonely Coders C
 - [CensusReporter.org](#census)
 - [Interactive Tables](#tables)
 - [Chartbuilder](#chartbuilder)
+- [Github](#github)
+- [Browser Developer Tools](#browser-tools)
 
 
 # <a name="census"></a>[CensusReporter.org](http://censusreporter.org)
@@ -436,3 +438,78 @@ It may take a few mins, but your site will be live at http://username.github.io/
 See mine here: [http://lindseycook.io/Chartbuilder25/](http://lindseycook.io/Chartbuilder25/)
 
 Happy charting!
+
+
+# Lonely Coders Cocktail
+
+*By Alexandra Kanik*
+
+As a lonely coder, it's important to have an arsenal of tools that help you find and troubleshoot projects and code. Here are some of the more useful tools that I and my piers use to accomplish these goals:
+
+- github
+- browser developer tools
+- LCC/NICAR-L
+- Google
+
+## <a name="github"></a>[Github](http://github.com)
+
+If you don't have a Github account already, [sign up here](https://github.com/join?source=header-home).
+
+Github is both a version control system and a platform for hosting and sharing code. The ideal situation is that you use Github as *both* a version control system and a way to discover and share code. But it's important not to get hung up on the fact that you don't know how to use Github as a version control system. That part is a little tricky especially if you're not using it on a daily basis.
+
+### Using Github to find coding projects
+
+If you visit the [Github Explore page](https://github.com/explore), you'll see the vastness of the Github network. Many organizations (including news orgs) are posting their code on Github in an effort to enhance transparency and to facilitate sharing and co-development.
+
+You can also perform a Google search for your favorite news organizations' Github accounts to see what kind of data projects they've posted there. For example:
+![](assets/github_search.png)
+
+
+### Using Github to 'Frankenstein' working projects
+
+It's important to note that not every project you find on Github is going to be a quality project. Some projects posted on Github are incomplete or broken and will likely cause you more problems than they're worth.
+
+Larger news organizations like [ProPublic](https://github.com/propublica), [LA Times](https://github.com/datadesk), and [Quartz](https://github.com/Quartz) usually don't post code projects that are broken or incomplete. And if they are, that fact will be noted in the README.md file available when you first view a projects, or repository.
+
+You may be wondering what the term 'Frankenstein' means in relationship to code. Frankensteining is when you take someone else's code and manipulate it so that it suites your specific needs.
+
+The reason that Github is so useful in this Frankensteining process is because you can 'pull' the code that exists on the Github website down to your personal computer and mess around with it to your hearts content!
+
+If you completely destroy the code beyond repair, you can simply delete your local version of the code, pull a fresh version of the code from Github, and start again.
+
+NOTE: This is actually where the version control system part comes in. If you're using Github to your full advantage and you completely destroy the code that you're working on, you shouldn't need to delete all of the work you've done. Git should allow you to roll back to a previous change that isn't so bad.
+
+Here are some steps involved in pulling a repository to your local machine and Frankensteining it:
+
+
+- If you don't have a Github account already, [sign up here](https://github.com/join?source=header-home).
+- Github is available as a [GUI desktop application](https://desktop.github.com) or via the command line. I personally find the GUI version harder to understand than the command line version, so this example will use the command line. If you don't know how to use the command line I strongly suggest investing some time in it because it will make most projects you try to work on much easier and more logical.
+- If you're also unfamiliar with using git via command line, [here's a useful resource](https://help.github.com/articles/set-up-git/).
+- Visit a Github repository that you'd like to play around with. We'll us [Propublica's Landline repository](https://github.com/propublica/landline) for this demo.
+![](assets/github_landline.png)
+- Grab the link that's available in the *https* field.
+- Create a local copy of the repository
+![](assets/git_clone.gif)
+- Read the README.md or README.txt file for documentation on how to use the project.
+- Mess around to your hearts content.
+
+## <a name="browser-tools"></a>Browser Developer Tools
+
+Browser developer tools are some of the strongest diagnostic tools that you’ll come across when trying to fix web-based issues. Browser developer tools are also a great way to get a look at dynamically-generated CMS code so you can manipulate it with CSS or javascript.
+![](assets/browser_tools_quick.gif)
+
+## LCC/NICAR-L
+
+Joining online coder communities is essential if you’re trying to go it alone.
+
+When you’re on deadline and you’re just not understanding the problems you’re up against, it’s invaluable to know that you’ve got a support system of more experienced coders.
+
+You can and should also use these communities as a way of sharing ideas and expanding your knowledge of how others are solving data journalism problems with code.
+
+- [LCC sign up](http://lcc-slack.herokuapp.com/)
+- [NICAR-L sign up](https://www.ire.org/resource-center/listservs/subscribe-nicar-l)
+
+
+## Let me Google that for you...
+
+Learn how to ask the Google questions. Not all questions are created equal. Having good google skills will save you a lot of time when trying to find answers to questions that you’re pretty sure others have had. I’m pretty close to believing that there are no issues that Google can’t find an answer to.
