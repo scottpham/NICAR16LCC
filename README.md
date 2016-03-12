@@ -490,7 +490,29 @@ Here are some steps involved in pulling a repository to your local machine and F
 - Grab the link that's available in the *https* field.
 - Create a local copy of the repository
 ![](assets/git_clone.gif)
+- Read the README.md or README.txt file for documentation on how to use the project.
+- Mess around to your hearts content.
 
+## <a name="browser-tools"></a>Browser Developer Tools
+
+Browser developer tools are some of the strongest diagnostic tools that you’ll come across when trying to fix web-based issues. Browser developer tools are also a great way to get a look at dynamically-generated CMS code so you can manipulate it with CSS or javascript.
+![](assets/browser_tools_quick.gif)
+
+## LCC/NICAR-L
+
+Joining online coder communities is essential if you’re trying to go it alone.
+
+When you’re on deadline and you’re just not understanding the problems you’re up against, it’s invaluable to know that you’ve got a support system of more experienced coders.
+
+You can and should also use these communities as a way of sharing ideas and expanding your knowledge of how others are solving data journalism problems with code.
+
+- [LCC sign up](http://lcc-slack.herokuapp.com/)
+- [NICAR-L sign up](https://www.ire.org/resource-center/listservs/subscribe-nicar-l)
+
+
+## Let me Google that for you...
+
+Learn how to ask the Google questions. Not all questions are created equal. Having good google skills will save you a lot of time when trying to find answers to questions that you’re pretty sure others have had. I’m pretty close to believing that there are no issues that Google can’t find an answer to.
 
 
 
