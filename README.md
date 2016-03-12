@@ -446,10 +446,10 @@ Happy charting!
 
 As a lonely coder, it's important to have an arsenal of tools that help you find and troubleshoot projects and code. Here are some of the more useful tools that I and my piers use to accomplish these goals:
 
-github
-browser developer tools
-LCC/NICAR-L
-Google
+- github
+- browser developer tools
+- LCC/NICAR-L
+- Google
 
 ## <a name="github"></a>[Github](http://github.com)
 
@@ -470,5 +470,20 @@ You can also perform a Google search for your favorite news organizations' githu
 It's important to note that not every project you find on Github is going to be a quality project. Some projects posted on Github are incomplete or broken and will likely cause you more problems than they're worth.
 
 Larger news organizations like [ProPublic](https://github.com/propublica), [LA Times](https://github.com/datadesk), and [Quartz](https://github.com/Quartz) usually don't post code projects that are broken or incomplete. And if they are, that fact will be noted in the README.md file available when you first view a projects, or repository.
+
+You may be wondering what the term 'Frankenstein' means in relationship to code. Frankensteining is when you take someone else's code and manipulate it so that it suites your specific needs.
+
+The reason that Github is so useful in this Frankensteining process is because you can 'pull' the code that exists on the Github website down to your personal computer and mess around with it to your hearts content!
+
+If you completely destroy the code beyond repair, you can simply delete your local version of the code, pull a fresh version of the code from Github, and start again.
+
+NOTE: This is actually where the version control system part comes in. If you're using Github to your full advantage and you completely destroy the code that you're working on, you shouldn't need to delete all of the work you've done. Git should allow you to roll back to a previous change that isn't so bad.
+
+Here are some steps involved in pulling a repository to your local machine and Frankensteining it:
+
+- Visit a Github repository that you'd like to play around with. We'll us [Propublica's Landline repository](https://github.com/propublica/landline) for this demo.
+![](assets/github_landline.png)
+
+
 
 
