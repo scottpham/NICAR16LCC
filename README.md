@@ -513,6 +513,3 @@ You can and should also use these communities as a way of sharing ideas and expa
 ## Let me Google that for you...
 
 Learn how to ask the Google questions. Not all questions are created equal. Having good google skills will save you a lot of time when trying to find answers to questions that you’re pretty sure others have had. I’m pretty close to believing that there are no issues that Google can’t find an answer to.
-
-
-
