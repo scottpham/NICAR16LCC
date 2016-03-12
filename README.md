@@ -27,6 +27,8 @@ If you are a lonely coder (or merely identify as one!) join the [Lonely Coders C
 - [CensusReporter.org](#census)
 - [Interactive Tables](#tables)
 - [Chartbuilder](#chartbuilder)
+- [Github](#github)
+- [Browser Developer Tools](#browser-tools)
 
 
 # <a name="census"></a>[CensusReporter.org](http://censusreporter.org)
@@ -436,3 +438,37 @@ It may take a few mins, but your site will be live at http://username.github.io/
 See mine here: [http://lindseycook.io/Chartbuilder25/](http://lindseycook.io/Chartbuilder25/)
 
 Happy charting!
+
+
+# Lonely Coders Cocktail
+
+*By Alexandra Kanik*
+
+As a lonely coder, it's important to have an arsenal of tools that help you find and troubleshoot projects and code. Here are some of the more useful tools that I and my piers use to accomplish these goals:
+
+github
+browser developer tools
+LCC/NICAR-L
+Google
+
+## <a name="github"></a>[Github](http://github.com)
+
+If you don't have a github account already, [sign up here](https://github.com/join?source=header-home).
+
+Github is both a version control system and a platform for hosting and sharing code. The ideal situation is that you use github as *both* a version control system and a way to discover and share code. But it's important not to get hung up on the fact that you don't know how to use Github as a version control system. That part is a little tricky especially if you're not using it on a daily basis.
+
+### Using Github to find coding projects
+
+If you visit the [Github Explore page](https://github.com/explore), you'll see the vastness of the github network. Many organizations (including news orgs) are posting their code on github in an effort to enhance transparency and to facilitate sharing and co-development.
+
+You can also perform a Google search for your favorite news organizations' github accounts to see what kind of data projects they've posted there. For example:
+![](assets/github_search.png)
+
+
+### Using Github to 'Frankenstein' working projects
+
+It's important to note that not every project you find on Github is going to be a quality project. Some projects posted on Github are incomplete or broken and will likely cause you more problems than they're worth.
+
+Larger news organizations like [ProPublic](https://github.com/propublica), [LA Times](https://github.com/datadesk), and [Quartz](https://github.com/Quartz) usually don't post code projects that are broken or incomplete. And if they are, that fact will be noted in the README.md file available when you first view a projects, or repository.
+
+
